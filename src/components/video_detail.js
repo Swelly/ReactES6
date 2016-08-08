@@ -11,13 +11,13 @@ const VideoDetail = ({video}) => {
 
   return (
 
-    <div className="video-detail col-md-12">
-      <div className="embed-responsive embed-responsive-16by9" style={{width:"100%", height:"280px"}}>
+    <div className="video-detail col-md-8">
+      <div className="embed-responsive embed-responsive-16by9">
         <iframe type="text/html" className="embed-responsive-item" src={url}></iframe>
       </div>
       <div className="details">
-        <div>{video.snippet.title}</div>
-        <div>{video.snippet.description}</div>
+        <h3>{video.snippet.title}</h3>
+        <p>{video.snippet.description}</p>
       </div>
     </div>
   );
